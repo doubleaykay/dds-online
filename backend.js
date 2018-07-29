@@ -75,3 +75,20 @@ if(day == "Saturday" || day == "Sunday"){
     document.getElementById("focoList").classList.add("list-group-item-dark");
   }
 }
+
+// Is Collis open?
+if(day == "Saturday" || day == "Sunday"){
+  document.getElementById("collisBadge").innerHTML = "Closed";
+  document.getElementById("collisBadge").classList.add("badge-dark");
+  document.getElementById("collisList").classList.add("list-group-item-dark");
+} else {
+  if (between(time, toTime(7, 00), toTime(20,00))){
+    document.getElementById("collisBadge").innerHTML = "Open";
+    document.getElementById("collisBadge").classList.add("badge-success");
+    document.getElementById("collisList").classList.add("list-group-item-success");
+  } else {
+    document.getElementById("collisBadge").innerHTML = "Closed";
+    document.getElementById("collisBadge").classList.add("badge-dark");
+    document.getElementById("collisList").classList.add("list-group-item-dark");
+  }
+}
