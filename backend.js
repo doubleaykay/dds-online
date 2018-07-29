@@ -40,3 +40,38 @@ weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
 var day = weekday[d.getDay()];
+
+// Is Foco open?
+if(day == "Saturday" || day == "Sunday"){
+  if (between(time, toTime(8, 00), toTime(14,30))){
+    document.getElementById("focoBadge").innerHTML = "Open";
+    document.getElementById("focoBadge").classList.add("badge-success");
+    document.getElementById("focoList").classList.add("list-group-item-success");
+  } else if (between(time, toTime(17, 00), toTime(20,30))){
+    document.getElementById("focoBadge").innerHTML = "Open";
+    document.getElementById("focoBadge").classList.add("badge-success");
+    document.getElementById("focoList").classList.add("list-group-item-success");
+  } else {
+    document.getElementById("focoBadge").innerHTML = "Closed";
+    document.getElementById("focoBadge").classList.add("badge-dark");
+    document.getElementById("focoList").classList.add("list-group-item-dark");
+  }
+} else {
+  if (between(time, toTime(7, 30), toTime(10,30))){
+    document.getElementById("focoBadge").innerHTML = "Open";
+    document.getElementById("focoBadge").classList.add("badge-success");
+    document.getElementById("focoList").classList.add("list-group-item-success");
+  } else if (between(time, toTime(11, 00), toTime(15,00))){
+    document.getElementById("focoBadge").innerHTML = "Open";
+    document.getElementById("focoBadge").classList.add("badge-success");
+    document.getElementById("focoList").classList.add("list-group-item-success");
+  } else if (between(time, toTime(17, 00), toTime(20,30))){
+    document.getElementById("focoBadge").innerHTML = "Open";
+    document.getElementById("focoBadge").classList.add("badge-success");
+    document.getElementById("focoList").classList.add("list-group-item-success");
+  } else {
+    document.getElementById("focoBadge").innerHTML = "Closed";
+    document.getElementById("focoBadge").classList.add("badge-dark");
+    document.getElementById("focoList").classList.add("list-group-item-dark");
+  }
+}
