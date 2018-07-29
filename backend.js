@@ -28,3 +28,15 @@ if (between(time, toTime(7, 0), toTime(10,59))) {
 } else if (between(time, toTime(16,00), toTime(20,59))) {
   document.getElementById("swipePeriod").innerHTML = "Dinner Swipe ($10.00)";
 }
+
+// Get day of the week
+var weekday = new Array(7);
+weekday[0] =  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+var day = weekday[d.getDay()];
