@@ -132,3 +132,41 @@ if(day == "Saturday" || day == "Sunday"){
       document.getElementById("kafList").classList.add("list-group-item-dark");
     }
 }
+
+// Is Novack open?
+if (between(time, toTime(00, 00), toTime(2, 00))) {
+  document.getElementById("novackBadge").innerHTML = "Open";
+  document.getElementById("novackBadge").classList.add("badge-success");
+  document.getElementById("novackList").classList.add("list-group-item-success");
+}
+else if(day == "Saturday") {
+    if (between(time, toTime(13, 00), toTime(24, 00))) {
+      document.getElementById("novackBadge").innerHTML = "Open";
+      document.getElementById("novackBadge").classList.add("badge-success");
+      document.getElementById("novackList").classList.add("list-group-item-success");
+    } else {
+      document.getElementById("novackBadge").innerHTML = "Closed";
+      document.getElementById("novackBadge").classList.add("badge-dark");
+      document.getElementById("novackList").classList.add("list-group-item-dark");
+    }
+} else if (day == "Sunday") {
+    if (between(time, toTime(11, 00), toTime(24, 00))) {
+      document.getElementById("novackBadge").innerHTML = "Open";
+      document.getElementById("novackBadge").classList.add("badge-success");
+      document.getElementById("novackList").classList.add("list-group-item-success");
+    } else {
+      document.getElementById("novackBadge").innerHTML = "Closed";
+      document.getElementById("novackBadge").classList.add("badge-dark");
+      document.getElementById("novackList").classList.add("list-group-item-dark");
+    }
+} else {
+    if (between(time, toTime(7, 30), toTime(24, 00))) {
+      document.getElementById("novackBadge").innerHTML = "Open";
+      document.getElementById("novackBadge").classList.add("badge-success");
+      document.getElementById("novackList").classList.add("list-group-item-success");
+    } else {
+      document.getElementById("novackBadge").innerHTML = "Closed";
+      document.getElementById("kafBadge").classList.add("badge-dark");
+      document.getElementById("novackList").classList.add("list-group-item-dark");
+    }
+}
