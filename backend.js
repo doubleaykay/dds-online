@@ -115,3 +115,20 @@ if(day == "Saturday" || day == "Sunday") {
       document.getElementById("hopList").classList.add("list-group-item-dark");
     }
 }
+
+// Is KAF open?
+if(day == "Saturday" || day == "Sunday"){
+  document.getElementById("kafBadge").innerHTML = "Closed";
+  document.getElementById("kafBadge").classList.add("badge-dark");
+  document.getElementById("kafList").classList.add("list-group-item-dark");
+} else {
+    if (between(time, toTime(8, 00), toTime(17,00))){
+      document.getElementById("kafBadge").innerHTML = "Open";
+      document.getElementById("kafBadge").classList.add("badge-success");
+      document.getElementById("kafList").classList.add("list-group-item-success");
+    } else {
+      document.getElementById("kafBadge").innerHTML = "Closed";
+      document.getElementById("kafBadge").classList.add("badge-dark");
+      document.getElementById("kafList").classList.add("list-group-item-dark");
+    }
+}
