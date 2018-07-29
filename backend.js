@@ -92,3 +92,26 @@ if(day == "Saturday" || day == "Sunday"){
     document.getElementById("collisList").classList.add("list-group-item-dark");
   }
 }
+
+// Is The Hop open?
+if(day == "Saturday" || day == "Sunday") {
+    if (between(time, toTime(10, 30), toTime(24, 00))) {
+      document.getElementById("hopBadge").innerHTML = "Open";
+      document.getElementById("hopBadge").classList.add("badge-success");
+      document.getElementById("hopList").classList.add("list-group-item-success");
+    } else {
+      document.getElementById("hopBadge").innerHTML = "Closed";
+      document.getElementById("hopBadge").classList.add("badge-dark");
+      document.getElementById("hopList").classList.add("list-group-item-dark");
+    }
+} else {
+    if (between(time, toTime(8, 00), toTime(24, 00))) {
+      document.getElementById("hopBadge").innerHTML = "Open";
+      document.getElementById("hopBadge").classList.add("badge-success");
+      document.getElementById("hopList").classList.add("list-group-item-success");
+    } else {
+      document.getElementById("hopBadge").innerHTML = "Closed";
+      document.getElementById("hopBadge").classList.add("badge-dark");
+      document.getElementById("hopList").classList.add("list-group-item-dark");
+    }
+}
