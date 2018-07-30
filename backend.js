@@ -41,7 +41,7 @@ weekday[6] = "Saturday";
 
 var day = weekday[d.getDay()];
 
-//Open and Close helper functions
+// Open and Close helper functions
 function focoOpen() {
   document.getElementById("focoBadge").innerHTML = "Open";
   document.getElementById("focoBadge").classList.add("badge-success");
