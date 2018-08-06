@@ -45,61 +45,61 @@ var day = weekday[d.getDay()];
 function focoOpen() {
   document.getElementById("focoBadge").innerHTML = "Open";
   document.getElementById("focoBadge").classList.add("badge-success");
-  document.getElementById("focoList").classList.add("list-group-item-success");
+  document.getElementById("focoHeading").classList.add("open");
 }
 
 function focoClose() {
   document.getElementById("focoBadge").innerHTML = "Closed";
   document.getElementById("focoBadge").classList.add("badge-dark");
-  document.getElementById("focoList").classList.add("list-group-item-dark");
+  document.getElementById("focoHeading").classList.add("closed");
 }
 
 function collisOpen() {
   document.getElementById("collisBadge").innerHTML = "Open";
   document.getElementById("collisBadge").classList.add("badge-success");
-  document.getElementById("collisList").classList.add("list-group-item-success");
+  document.getElementById("collisHeading").classList.add("open");
 }
 
 function collisClose() {
   document.getElementById("collisBadge").innerHTML = "Closed";
   document.getElementById("collisBadge").classList.add("badge-dark");
-  document.getElementById("collisList").classList.add("list-group-item-dark");
+  document.getElementById("collisHeading").classList.add("closed");
 }
 
 function hopOpen() {
   document.getElementById("hopBadge").innerHTML = "Open";
   document.getElementById("hopBadge").classList.add("badge-success");
-  document.getElementById("hopList").classList.add("list-group-item-success");
+  document.getElementById("hopHeading").classList.add("open");
 }
 
 function hopClose() {
   document.getElementById("hopBadge").innerHTML = "Closed";
   document.getElementById("hopBadge").classList.add("badge-dark");
-  document.getElementById("hopList").classList.add("list-group-item-dark");
+  document.getElementById("hopHeading").classList.add("closed");
 }
 
 function kafOpen() {
   document.getElementById("kafBadge").innerHTML = "Open";
   document.getElementById("kafBadge").classList.add("badge-success");
-  document.getElementById("kafList").classList.add("list-group-item-success");
+  document.getElementById("kafHeading").classList.add("open");
 }
 
 function kafClose() {
   document.getElementById("kafBadge").innerHTML = "Closed";
   document.getElementById("kafBadge").classList.add("badge-dark");
-  document.getElementById("kafList").classList.add("list-group-item-dark");
+  document.getElementById("kafHeading").classList.add("closed");
 }
 
 function novackOpen() {
   document.getElementById("novackBadge").innerHTML = "Open";
   document.getElementById("novackBadge").classList.add("badge-success");
-  document.getElementById("novackList").classList.add("list-group-item-success");
+  document.getElementById("novackHeading").classList.add("open");
 }
 
 function novackClose() {
   document.getElementById("novackBadge").innerHTML = "Closed";
   document.getElementById("kafBadge").classList.add("badge-dark");
-  document.getElementById("novackList").classList.add("list-group-item-dark");
+  document.getElementById("novackHeading").classList.add("closed");
 }
 
 // Is Foco open?
