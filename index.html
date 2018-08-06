@@ -30,6 +30,9 @@
 
   <!-- FontAwesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
@@ -42,29 +45,143 @@
     </div>
   </div>
 
-  <div class="container">
-    <ul class="list-group">
-      <li class="list-group-item d-flex justify-content-between align-items-center" id="focoList">
-        Foco (Class of '53 Commons)
+  <div class="container accordion" id="locationList">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center" id="focoHeading">
+        <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#focoCollapse" aria-expanded="true" aria-controls="focoCollapse" style="padding: 0">
+          Foco (Class of '53 Commons)
+        </button>
         <span class="badge" id="focoBadge"></span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center" id="collisList">
-        Collis
+      </div>
+
+      <div id="focoCollapse" class="collapse" aria-labelledby="focoHeading" data-parent="#locationList">
+        <!-- <img class="card-img-top img-fluid" src="https://farm8.staticflickr.com/7167/6483256215_6ceeec776d_o.jpg" width="1024" height="681" alt="Card image cap"> -->
+        <div class="card-body">
+          <p>Foco, <em>"Dartmouth's premier all-you-care-to-eat dining hall and the central point of on-campus dining," </em> is a great place to sit down and have a meal.</p>
+          <h6>Hours</h6>
+          <p>
+            Monday – Saturday <br />
+            7:00 am – 10:30 am <br />
+            11 am – 2:30 pm <br />
+            5 pm – 8:30 pm <br />
+          </p>
+          <p>
+            Sunday <br />
+            7 am – 2:30 pm <br />
+            5 pm – 8:30 pm <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center" id="collisHeading">
+        <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collisCollapse" aria-expanded="true" aria-controls="collisCollapse" style="padding: 0">
+          Collis
+        </button>
         <span class="badge" id="collisBadge"></span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center" id="hopList">
-        The Hop (Courtyard Cafe)
+      </div>
+
+      <div id="collisCollapse" class="collapse" aria-labelledby="collisHeading" data-parent="#locationList">
+        <!-- <img class="card-img-top img-fluid" src="https://farm8.staticflickr.com/7167/6483256215_6ceeec776d_o.jpg" width="1024" height="681" alt="Card image cap"> -->
+        <div class="card-body">
+          <p>Collis <em>"offers a wide selection of made-from-scratch baked goods, soups and special entrees"</em> but is famous for custom omlettes, stir frys, and pastas.</p>
+          <h6>Hours</h6>
+          <p>
+            Monday – Thursday <br />
+            7:00 am – 8:00 pm <br />
+          </p>
+          <p>
+            Friday <br />
+            7 am – 2:30 pm <br />
+          </p>
+          <p>
+            Saturday and Sunday <br />
+            Closed. <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center" id="hopHeading">
+        <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#hopCollapse" aria-expanded="true" aria-controls="hopCollapse" style="padding: 0">
+          The Hop (Courtyard Cafe)
+        </button>
         <span class="badge" id="hopBadge"></span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center" id="kafList">
-        KAF (King Arthur Flour)
+      </div>
+
+      <div id="hopCollapse" class="collapse" aria-labelledby="hopHeading" data-parent="#locationList">
+        <!-- <img class="card-img-top img-fluid" src="https://farm8.staticflickr.com/7167/6483256215_6ceeec776d_o.jpg" width="1024" height="681" alt="Card image cap"> -->
+        <div class="card-body">
+          <p><em>"Courtyard Café is home to a fast-food grille serving a wide selection ranging from half-pound burgers and fries to breakfast wraps."</em> They will custom make almost anything on their menu ― even items that aren't!</p>
+          <h6>Hours</h6>
+          <p>
+            Monday – Friday <br />
+            8 am - midnight <br />
+          </p>
+          <p>
+            Saturday and Sunday <br />
+            10:30 am - midnight <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center" id="kafHeading">
+        <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#kafCollapse" aria-expanded="true" aria-controls="kafCollapse" style="padding: 0">
+          KAF (King Arthur Flour)
+        </button>
         <span class="badge" id="kafBadge"></span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-center" id="novackList">
-        Novack
+      </div>
+
+      <div id="kafCollapse" class="collapse" aria-labelledby="kafHeading" data-parent="#locationList">
+        <!-- <img class="card-img-top img-fluid" src="https://farm8.staticflickr.com/7167/6483256215_6ceeec776d_o.jpg" width="1024" height="681" alt="Card image cap"> -->
+        <div class="card-body">
+          <p>KAF: <em>"the one place where students can get quality coffee."</em> They have amazing pastries and drinks, but be careful as they can be a DBA black hole.</p>
+          <h6>Hours</h6>
+          <p>
+            Monday – Friday <br />
+            8:00 am – 5:00 pm <br />
+          </p>
+          <p>
+            Saturday and Sunday <br />
+            Closed. <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center" id="novackHeading">
+        <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#novackCollapse" aria-expanded="true" aria-controls="novackCollapse" style="padding: 0">
+          Novack
+        </button>
         <span class="badge" id="novackBadge"></span>
-      </li>
-    </ul>
+      </div>
+
+      <div id="novackCollapse" class="collapse" aria-labelledby="novackHeading" data-parent="#locationList">
+        <!-- <img class="card-img-top img-fluid" src="https://farm8.staticflickr.com/7167/6483256215_6ceeec776d_o.jpg" width="1024" height="681" alt="Card image cap"> -->
+        <div class="card-body">
+          <p>Novack <em>"serves up coffee drinks and full meals to students in a hurry."</em> and is located convinently on the first floor of the library.</p>
+          <h6>Hours</h6>
+          <p>
+            Monday – Friday <br />
+            7:30 am - 2 am <br />
+          </p>
+          <p>
+            Saturday <br />
+            1 pm - 2 am <br />
+          </p>
+          <p>
+            Sunday <br />
+            11 am - 2 am <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Backend JavaScript -->
@@ -75,7 +192,7 @@
   <div class="footer" style="margin-top:2rem;">
     <div class="container">
       <center>
-        <p>Easily check meal swipe value and whether DDS locations are open. <br />
+        <p>Easily check meal swipe value and whether DDS locations are open. Tap location name for more info.<br />
         <em>Made by <a href="https://www.anoushkhan.com" target="blank">Anoush Khan '21</a></em> <br />
         <a href="https://github.com/doubleaykay/dds-online" target="blank"><i class="fab fa-github-square text-dark"></i></a></p>
       </center>
