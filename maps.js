@@ -1,7 +1,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZG91YmxlYXlrYXkiLCJhIjoiY2prcjFmM2sxMHZwaDNwbG1vdmI1M2p3dSJ9.lsLTFEgtfhgbI18RFypUuQ';
 
 var mapStyle = 'mapbox://styles/doubleaykay/cjkr3ud6nblay2rten5sb06bv'
-var mapZoom = 17.0
+var mapZoom = 16.5
 
 const focoMap = new mapboxgl.Map({
   container: 'focoMap',
