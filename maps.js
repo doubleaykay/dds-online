@@ -13,27 +13,27 @@ const focoMap = new mapboxgl.Map({
 const collisMap = new mapboxgl.Map({
   container: 'collisMap',
   style: mapStyle,
-  center: [-72.290, 43.703],
+  center: [-72.289848, 43.702667],
   zoom: mapZoom
 });
 
 const hopMap = new mapboxgl.Map({
   container: 'hopMap',
   style: mapStyle,
-  center: [-72.290, 43.703],
+  center: [-72.288135, 43.701659],
   zoom: mapZoom
 });
 
 const kafMap = new mapboxgl.Map({
   container: 'kafMap',
   style: mapStyle,
-  center: [-72.290, 43.703],
+  center: [-72.288512, 43.705318],
   zoom: mapZoom
 });
 
 const novackMap = new mapboxgl.Map({
   container: 'novackMap',
   style: mapStyle,
-  center: [-72.290, 43.703],
+  center: [-72.288585, 43.705778],
   zoom: mapZoom
 });
