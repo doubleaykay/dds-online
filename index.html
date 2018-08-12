@@ -33,6 +33,11 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="custom.css">
+
+  <!-- Mapbox CDN -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
 <body>
@@ -79,7 +84,7 @@
                 </p>
               </div>
               <div class="col-sm">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-72.2923055291176%2C43.702410591245844%2C-72.29019999504091%2C43.70376404754665&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/43.70309/-72.29125">View Larger Map</a></small>
+                <div id='focoMap' style='width: 400px; height: 300px;'></div>
               </div>
             </div>
           </div>
@@ -122,7 +127,7 @@
                 </p>
               </div>
               <div class="col-sm">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-72.2923055291176%2C43.702410591245844%2C-72.29019999504091%2C43.70376404754665&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/43.70309/-72.29125">View Larger Map</a></small>
+                <div id='collisMap' style='width: 400px; height: 300px;'></div>
               </div>
             </div>
           </div>
@@ -161,7 +166,7 @@
                 </p>
               </div>
               <div class="col-sm">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-72.2923055291176%2C43.702410591245844%2C-72.29019999504091%2C43.70376404754665&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/43.70309/-72.29125">View Larger Map</a></small>
+                <div id='hopMap' style='width: 400px; height: 300px;'></div>
               </div>
             </div>
           </div>
@@ -200,7 +205,7 @@
                 </p>
               </div>
               <div class="col-sm">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-72.2923055291176%2C43.702410591245844%2C-72.29019999504091%2C43.70376404754665&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/43.70309/-72.29125">View Larger Map</a></small>
+                <div id='kafMap' style='width: 400px; height: 300px;'></div>
               </div>
             </div>
           </div>
@@ -243,7 +248,7 @@
                 </p>
               </div>
               <div class="col-sm">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-72.2923055291176%2C43.702410591245844%2C-72.29019999504091%2C43.70376404754665&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/43.70309/-72.29125">View Larger Map</a></small>
+                <div id='novackMap' style='width: 400px; height: 300px;'></div>
               </div>
             </div>
           </div>
@@ -256,6 +261,9 @@
 
   <!-- Backend JavaScript -->
   <script src="backend.js"></script>
+
+  <!-- Map JavaScript -->
+  <script src="maps.js"></script>
 </body>
 
 <footer>
