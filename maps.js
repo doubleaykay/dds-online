@@ -10,12 +10,20 @@ const focoMap = new mapboxgl.Map({
   zoom: mapZoom
 });
 
+var focoMarker = new mapboxgl.Marker()
+  .setLngLat([-72.290939, 43.703056])
+  .addTo(focoMap);
+
 const collisMap = new mapboxgl.Map({
   container: 'collisMap',
   style: mapStyle,
   center: [-72.289848, 43.702667],
   zoom: mapZoom
 });
+
+var collisMarker = new mapboxgl.Marker()
+  .setLngLat([-72.289848, 43.702667])
+  .addTo(collisMap);
 
 const hopMap = new mapboxgl.Map({
   container: 'hopMap',
@@ -24,6 +32,10 @@ const hopMap = new mapboxgl.Map({
   zoom: mapZoom
 });
 
+var hopMarker = new mapboxgl.Marker()
+  .setLngLat([-72.288135, 43.701659])
+  .addTo(hopMap);
+
 const kafMap = new mapboxgl.Map({
   container: 'kafMap',
   style: mapStyle,
@@ -31,9 +43,17 @@ const kafMap = new mapboxgl.Map({
   zoom: mapZoom
 });
 
+var kafMarker = new mapboxgl.Marker()
+  .setLngLat([-72.288512, 43.705318])
+  .addTo(kafMap);
+
 const novackMap = new mapboxgl.Map({
   container: 'novackMap',
   style: mapStyle,
   center: [-72.288585, 43.705778],
   zoom: mapZoom
 });
+
+var kafMarker = new mapboxgl.Marker()
+  .setLngLat([-72.288585, 43.705778])
+  .addTo(novackMap);
