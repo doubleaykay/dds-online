@@ -58,6 +58,14 @@ var kafMarker = new mapboxgl.Marker()
   .setLngLat([-72.288585, 43.705778])
   .addTo(novackMap);
 
+$('#locationList').on('shown.bs.collapse', function () {
+    focoMap.resize();
+    collisMap.resize();
+    hopMap.resize();
+    kafMap.resize();
+    novackMap.resize();
+  })
+
 $('#locationList').on('hidden.bs.collapse', function () {
     focoMap.flyTo({
             center: [-72.290939, 43.703056]
