@@ -57,3 +57,21 @@ const novackMap = new mapboxgl.Map({
 var kafMarker = new mapboxgl.Marker()
   .setLngLat([-72.288585, 43.705778])
   .addTo(novackMap);
+
+$('#locationList').on('hidden.bs.collapse', function () {
+    focoMap.flyTo({
+            center: [-72.290939, 43.703056]
+          });
+    collisMap.flyTo({
+            center: [-72.289848, 43.702667]
+          });
+    hopMap.flyTo({
+            center: [-72.288135, 43.701659]
+          });
+    kafMap.flyTo({
+            center: [-72.288512, 43.705318]
+          });
+    novackMap.flyTo({
+            center: [-72.288585, 43.705778]
+          });
+  })
