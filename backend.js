@@ -98,7 +98,7 @@ function novackOpen() {
 
 function novackClose() {
   document.getElementById("novackBadge").innerHTML = "Closed";
-  document.getElementById("kafBadge").classList.add("badge-dark");
+  document.getElementById("novackBadge").classList.add("badge-dark");
   document.getElementById("novackHeading").classList.add("closed");
 }
 
