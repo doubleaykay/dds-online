@@ -68,18 +68,18 @@ $('#locationList').on('shown.bs.collapse', function () {
 
 $('#locationList').on('hidden.bs.collapse', function () {
     focoMap.flyTo({
-            center: [-72.290939, 43.703056]
-          });
+      center: [-72.290939, 43.703056]
+    });
     collisMap.flyTo({
-            center: [-72.289848, 43.702667]
-          });
+      center: [-72.289848, 43.702667]
+    });
     hopMap.flyTo({
-            center: [-72.288135, 43.701659]
-          });
+      center: [-72.288135, 43.701659]
+    });
     kafMap.flyTo({
-            center: [-72.288512, 43.705318]
-          });
+      center: [-72.288512, 43.705318]
+    });
     novackMap.flyTo({
-            center: [-72.288585, 43.705778]
-          });
+      center: [-72.288585, 43.705778]
+    });
   })
