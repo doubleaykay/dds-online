@@ -282,10 +282,33 @@
   <div class="footer" style="margin-top:2rem;">
     <div class="container">
       <center>
-        <p>Check meal swipe value and whether DDS locations are open. Tap location name for more info.<br />
-        <em>Made by <a href="https://www.anoushkhan.com" target="blank">Anoush Khan '21</a></em> <br />
-        Issues? <a href="mailto:anoush.21@dartmouth.edu?subject=Swipe%20Checker%20Issue%20or%20Praise" target="blank">Email me.</a>
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#aboutModal" style="padding: 0">
+          <em>About Swipe Checker</em>
+        </button>
       </center>
+
+      <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="aboutModalLabel">About Swipe Checker</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <p class="lead">
+                  Easily check meal swipe value and whether DDS locations are open. Tap location name for more info.
+                </p>
+                <p>
+                Made by <a href="https://www.anoushkhan.com" target="blank">Anoush Khan '21</a> <br />
+                Issues? <a href="mailto:anoush.21@dartmouth.edu?subject=Swipe%20Checker%20Issue%20or%20Praise" target="blank">Email me.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
